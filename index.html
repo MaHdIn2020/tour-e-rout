@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,47 @@
     </script>
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">WanderVistas</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <!-- Hero -->
+    <section class="bg-[url('/images/bg.svg')] bg-cover bg-center flex flex-col items-center justify-center text-center min-h-screen px-6">
+        <div class="bg-black/50 p-10 rounded-xl text-white max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold">Discover the World, One Journey at a Time</h1>
+            <p class="mt-4 text-lg">Find hidden gems, plan unforgettable adventures, and explore breathtaking destinations with ease.</p>
+            <button class="mt-6 btn btn-primary">Start Exploring</button>
+        </div>
+    </section>
     
+
 </body>
 </html>
